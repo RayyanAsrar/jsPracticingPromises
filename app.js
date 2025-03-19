@@ -163,3 +163,23 @@ loanDedo(400).then((res)=>{
     
 })
 /////
+
+function girlFriendKaWada(wada){
+return new Promise((resolve, reject) => {
+    setTimeout(()=>{
+        if (wada===true) {
+            resolve('mubarak ho bhai lucky hai tu')
+        } else {
+            reject('heheh kat gya tera bhi')
+        }
+    },1000)
+})    
+}
+girlFriendKaWada(false)
+.then((res)=>{
+    console.log(res);
+    
+}).catch((err)=>{
+console.log(err);
+
+})
